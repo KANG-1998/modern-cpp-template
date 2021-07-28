@@ -8,8 +8,16 @@ TEST(TmpAddTest, CheckValues)
   EXPECT_TRUE(true);
 }
 
+TEST(TmpAddTest, CheckSub)
+{
+  ASSERT_EQ(tmp::sub(3, 1), 2);
+  EXPECT_FALSE(true);
+}
+
 int main(int argc, char **argv)
 {
   ::testing::InitGoogleTest(&argc, argv);
+
+  std::cout << "balala" <<std::endl;
   return RUN_ALL_TESTS();
 }
